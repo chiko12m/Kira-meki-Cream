@@ -1,0 +1,751 @@
+@charset "UTF-8";
+/* ---------- 共通 ---------- */
+body {
+    font-family: 'Noto Serif JP' , serif;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1;
+    color: #000;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.marcellus {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eb-garamond-medium {
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.eb-garamond-bold {
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container {
+    padding: 0 1rem;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0;
+        max-width: 75rem;
+    }
+}
+
+.button {
+    height: 3.625rem;
+    width: 100%;
+    max-width: 18.75rem;
+    border-radius: 1.7188rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.button--blue {
+    background-color: #46C4DB;
+    color: #fff;
+}
+
+.button--blue:hover {
+    background-color: #fff;
+    color: #46C4DB;
+    border: solid #46C4DB .125rem;
+}
+
+.button--green {
+    background-color: #5DD5AB;
+    color: #fff;
+}
+
+.button--green:hover {
+    background-color: #fff;
+    color: #5DD5AB;
+    border: solid #5DD5AB .125rem;
+}
+
+.button--green button {
+    height: 3.625rem;
+    width: 100%;
+    max-width: 18.75rem;
+    border-radius: 1.7188rem;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.button--green:hover button {
+    color: #5DD5AB;
+}
+
+@media (min-width: 768px) {
+    .button {
+        width: 34%;
+        max-width: 18.75rem;
+    }
+}
+
+.section__title {
+    width: 100%;
+    margin-bottom: 2.4375rem;
+}
+
+.section__title .-en {
+    font-size: 1.875rem;
+    letter-spacing: .0938rem;
+    display: block;
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+.section__title .-jp {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .0625rem;
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .section__title {
+        margin-bottom: 2.75rem;
+    }
+
+    .section__title .-en {
+        font-size: 2.8125rem;
+        letter-spacing: .125rem;
+        margin-bottom: 1.1875rem;
+    }
+
+    .section__title .-jp {
+        font-size: 1.25rem;
+        letter-spacing: .0625rem;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* ---------- ヘッダー ---------- */
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.header__logo {
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 1.6875rem;
+    padding-left: .3125rem;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .header__logo {
+        font-size: 1.75rem;
+        letter-spacing: .35rem;
+        top: 2.25rem;
+        padding-left: .375rem;
+    }
+}
+
+/* ---------- メインビジュアル ---------- */
+.mv {
+    background-image: url("../image/mv_sp_01.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 28.125rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 9.8125rem;
+}
+
+.mv__container {
+    height: 34.8125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1.4375rem;
+}
+
+.mv__title {
+    font-size: 2.5625rem;
+    letter-spacing: .7625rem;
+    line-height: 1.2;
+    margin-bottom: .8125rem;
+}
+
+.mv__description {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: .375rem;
+}
+
+@media (min-width: 768px) {
+    .mv  {
+        background-image: url(../image/mv_pc_01.jpg);
+        height: 45rem;
+        margin-bottom: 3rem;
+    }
+
+    .mv__container {
+        height: 45rem;
+        justify-content: center;
+        padding-left: 4.5625rem;
+    }
+
+    .mv__title {
+        font-size: 3.125rem;
+        letter-spacing: .9375rem;
+        line-height: 1.4;
+        margin-bottom: .375rem;
+    }
+
+    .mv__description {
+        font-size: 1.5625rem;
+        line-height: 1.5;
+        letter-spacing: .4625rem;
+    }
+}
+
+/* ---------- Call To Action ---------- */
+.cta {
+    margin-bottom: 3.125rem;
+}
+
+.cta__container {
+    background-color: #F0F4FF;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 1.8125rem 2.125rem;
+}
+
+.cta__product {
+    color: #111;
+    text-align: center;
+}
+
+.cta__product-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .1125rem;
+    margin-bottom: .4375rem;
+}
+
+.cta__product-price {
+    font-size: .875rem;
+    letter-spacing: .0875rem;
+    line-height: 1;
+    margin-bottom: .1875rem;
+}
+
+@media (min-width: 768px) {
+    .cta {
+        margin-bottom: 3rem;
+    }
+
+    .cta__container {
+        max-width: 62.5rem;
+        height: 9.125rem;
+        margin: auto;
+        flex-direction: row;
+        column-gap: clamp(1rem, 3vw , 2rem);
+        justify-content: center;
+        align-items: center;
+        padding: 0 3rem;
+    }
+
+    .cta__product {
+        text-align: left;
+        width: 15rem;
+    }
+
+    .cta__product-title {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        letter-spacing: .15rem;
+        margin-bottom: .5rem;
+    }
+
+    .cta__product-price {
+        font-size: 1rem;
+    }
+}
+
+/* ---------- 製品 ---------- */
+.product {
+    background-image: url("../image/product_img_sp_01.jpg");
+    background-size: cover;
+    background-position: 50% 72%;
+    width: 100%;
+    height: 42.5rem;
+    padding-top: 3.3125rem;
+    margin-bottom: 3.4375rem;
+}
+
+.product__catch {
+    color: #fff;
+    width: 100%;
+}
+
+.product__catch-title .-en {
+    font-size: 1.875rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 1.125rem;
+}
+
+.product__catch-title .-jp {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-bottom: 1.125rem;
+}
+
+.product__catch-description {
+    line-height: 2.3;
+}
+
+@media (min-width: 768px) {
+    .product {
+        background-image: url("../image/product_img_pc_01.jpg");
+        height: 34.375rem;
+        padding-top: 0;
+        margin-bottom: 5.4375rem;
+    }
+
+    .product__catch {
+        width: 32.5rem;
+        height: 34.375rem;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product__catch-title .-en {
+        font-size: 2.375rem;
+        text-align: left;
+        margin-bottom: 1.1875rem;
+        padding-top: .8125rem;
+    }
+
+    .product__catch-title .-jp {
+        text-align: left;
+        margin-bottom: 1.375rem;
+    }
+
+    .product__catch-description {
+        line-height: 2.3;
+        max-width: 26.8125rem;
+    }
+}
+
+/* ---------- お客様の声 ---------- */
+.voice {
+    margin-bottom: 4.75rem;
+}
+
+.voice__group {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice__item {
+    background-color: #DBF7F9;
+    padding: 1.75rem .875rem 1.5rem;
+}
+
+.voice__img {
+    padding-left: .75rem;
+    display: block;
+    margin-bottom: .75rem;
+}
+
+.voice__img  img{
+    width: 5rem;
+    height: auto;
+    margin: auto;
+}
+
+.voice__title {
+    font-size: .875rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.125rem;
+}
+
+.voice__text {
+    line-height: 2;
+}
+
+@media (min-width: 768px) {
+    .voice {
+        padding: 0 1.375rem;
+        margin-bottom: 7.0625rem;
+    }
+
+    .voice__item {
+        background-color: #DBF7F9;
+        padding: 2.5rem 1rem 2.1875rem;
+        margin-right: clamp(.5rem, 2vw , 1.25rem);
+        margin-left: clamp(.5rem, 2vw , 1.25rem);
+    }
+
+    .voice__img {
+        padding-left: 0;
+        display: block;
+        margin-bottom: .75rem;
+    }
+
+    .voice__img  img{
+        width: 6.25rem;
+    }
+
+    .voice__title {
+        font-size: .9375rem;
+        margin-bottom: 1.125rem;
+    }
+
+    .voice__text {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+}
+
+
+/* Slick */
+.slick-list {
+    margin: 0 .5rem;
+}
+
+.slick-prev,
+.slick-next,
+.slick-prev:hover,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-next:focus {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    background-color: #00AFBF;
+    position: unset;
+    margin-top: 2rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'bootstrap-icons';
+    font-size: 2rem;
+    color: #fff;
+    opacity: 1;
+}
+
+.slick-prev:before {
+    content: '\F12C';
+}
+
+.slick-next:before {
+    content: '\F135';
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-dots {
+    bottom: -1.6875rem;
+}
+
+.slick-dots li {
+    width: .6875rem;
+    height: .6875rem;
+    margin: 0 .1875rem;
+}
+
+.slick-dots li button {
+    width: .6875rem;
+    height: .6875rem;
+    padding: 0;
+}
+
+.slick-dots li button:before {
+    font-size: .6875rem;
+    line-height: 1;
+    width: .6875rem;
+    height: .6875rem;
+    color: #eee;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #00AFBF;
+}
+
+@media (min-width: 768px) {
+    .slick-list {
+        max-width: 63.75rem;
+        margin: 0 clamp(.5rem, 2vw , 1.25rem);
+    }
+    .slick-prev,
+    .slick-next,
+    .slick-prev:hover,
+    .slick-next:hover,
+    .slick-prev:focus,
+    .slick-next:focus {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .slick-prev:hover,
+    .slick-next:hover {
+        opacity: 0.7;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 2.875rem;
+    }
+
+    .slick-dots {
+        bottom: -2.1875rem;
+    }
+}
+
+/* ---------- よくあるご質問 ---------- */
+.faq {
+    background: linear-gradient(to right, #F4FFE8, #C6F0FE);
+    padding-top: 2.25rem;
+    padding-bottom: .5625rem;
+    margin-bottom: 3.125rem;
+}
+
+.faq__accordion {
+    background-color: #fff;
+    padding: 1.125rem .875rem 1rem 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.faq__question {
+    display: flex;
+    color: #444;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq__qa {
+    font-size: 1rem;
+    padding-top: .375rem;
+}
+
+.faq__question-title {
+    font-size: .9375rem;
+    font-weight: 500;
+    padding: 0 .75rem;
+    line-height: 1.86;
+    flex: 1;
+}
+
+.faq__arrow {
+    width: 1rem;
+    height: 1rem;
+    font-size: 1rem;
+    color: #000;
+    margin-top: .5625rem;
+    transition: transform 0.3s;
+}
+
+.faq__answer-wrap {
+    display: none;
+}
+
+.faq__answer {
+    margin-top: .75rem;
+    margin-bottom: .875rem;
+    display: flex;
+}
+
+.faq__answer-text {
+    font-size: .9375rem;
+    line-height: 1.86;
+    padding-left: .8125rem;
+}
+
+.faq__answer-wrap.open {
+    display: block;
+}
+
+.faq__arrow.rotate {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+    .faq {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .faq__container {
+        max-width: 37.5rem;
+    }
+
+    .faq__accordion {
+        padding: 1.25rem 1.375rem 1.3125rem 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .faq__qa {
+        font-size: 1.125rem;
+    }
+
+    .faq__question-title {
+        padding: 0 1rem;
+        margin-top: .125rem;
+    }
+
+    .faq__arrow {
+        width: 1.0625rem;
+        height: 1.0625rem;
+        font-size: 1.0625rem;
+    }
+
+    .faq__answer {
+        margin-top: 1.0625rem;
+        margin-bottom: 0;
+    }
+
+    .faq__answer-text {
+        padding-left: 1.0625rem;
+        padding-right: .75rem;
+    }
+
+}
+
+/* ---------- フッター ---------- */
+.footer {
+    width: 100%;
+    height: 10.3125rem;
+    background-color: #0071CE;
+    color: #fff;
+}
+.footer__scroll-to-top {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #0071CE;
+    top: -2.5rem;
+    right: 1rem;
+}
+
+.footer__scroll-to-top i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.875rem;
+    padding-top: 1.75rem;
+    position: relative;
+}
+
+.footer__logo {
+    font-size: 1.75rem;
+    letter-spacing: .35rem;
+    padding-left: .375rem;
+    white-space: nowrap;
+}
+
+.footer__link-list {
+    display: flex;
+    font-size: .75rem;
+    column-gap: 1.875rem;
+}
+
+.footer small {
+    font-size: .6875rem;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        height: 6.5rem;
+    }
+
+    .footer__scroll-to-top {
+        right: 0;
+    }
+
+    .footer__scroll-to-top:hover i {
+        opacity: 0.7;
+    }
+
+    .footer__container {
+        height: 6.5rem;
+        flex-direction: row;
+        column-gap: 1.375rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 clamp(.5rem, 2.7vw , 2rem);
+    }
+
+    .footer__logo {
+        font-size: 2rem;
+        letter-spacing: .3937rem;
+        padding-left: 0;
+    }
+
+    .footer__link-list {
+        justify-content: space-around;
+        font-size: .875rem;
+        column-gap:  clamp(.5rem, 2.7vw , 2rem);
+        padding-left: clamp(.5rem, 3.7vw , 2.8125rem);
+    }
+
+    .footer__link-list a {
+        white-space: nowrap;
+    }
+
+    .footer__link-list a:hover {
+        opacity: 0.7;
+    }
+
+    .footer small {
+        font-size: .75rem;
+        padding-top: .25rem;
+    }
+}
