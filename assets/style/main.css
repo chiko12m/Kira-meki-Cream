@@ -64,21 +64,9 @@ ul {
     color: #fff;
 }
 
-.button--blue:hover {
-    background-color: #fff;
-    color: #46C4DB;
-    border: solid #46C4DB .125rem;
-}
-
 .button--green {
     background-color: #5DD5AB;
     color: #fff;
-}
-
-.button--green:hover {
-    background-color: #fff;
-    color: #5DD5AB;
-    border: solid #5DD5AB .125rem;
 }
 
 .button--green button {
@@ -92,14 +80,26 @@ ul {
     color: #fff;
 }
 
-.button--green:hover button {
-    color: #5DD5AB;
-}
-
 @media (min-width: 768px) {
     .button {
         width: 34%;
         max-width: 18.75rem;
+    }
+
+    .button--blue:hover {
+        background-color: #fff;
+        color: #46C4DB;
+        border: solid #46C4DB .125rem;
+    }
+
+    .button--green:hover {
+        background-color: #fff;
+        color: #5DD5AB;
+        border: solid #5DD5AB .125rem;
+    }
+
+    .button--green:hover button {
+        color: #5DD5AB;
     }
 }
 
