@@ -746,6 +746,7 @@ ul {
 
     .footer small {
         font-size: .75rem;
+        line-height: 1.7;
         padding-top: .25rem;
     }
 }
