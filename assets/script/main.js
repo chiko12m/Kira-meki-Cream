@@ -5,6 +5,7 @@ $('.voice__group').slick({
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 3000,
+    infinite: true,
     responsive: [
         {
             breakpoint: 768,
